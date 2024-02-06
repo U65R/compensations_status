@@ -4,7 +4,7 @@
     'sequence': 1,
 
     'description': """
-        Compensation statut module
+        Compensation status module
     """,
 
     'author': "pluja",
