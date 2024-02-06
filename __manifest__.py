@@ -7,8 +7,8 @@
         Compensation status module
     """,
 
-    'author': "pluja",
-    'website': "",
+    'author': "My Company",
+    'website': "http://abcd.ad",
     
     'category': 'Compensation',
     'license': 'LGPL-3',
