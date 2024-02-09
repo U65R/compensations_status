@@ -1,0 +1,47 @@
+<odoo>
+    <data>
+        <!-- explicit list view definition -->
+        <record model="ir.ui.view" id="analytical_info_list">
+            <field name="name">info.analytical_info list</field>
+            <field name="model">info.analytical_info</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="project"/>
+                    <field name="source"/>
+                    <field name="source_type"/>
+                    <field name="value"/>
+                </tree>
+            </field>
+        </record>
+        <!-- explicit list view definition -->
+        <record model="ir.ui.view" id="analytical_info_form">
+            <field name="name">info.analytical_info list</field>
+            <field name="model">info.analytical_info</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group>
+                        <field name="project"/>
+                        <field name="source"/>
+                        <field name="source_type"/>
+                        <field name="value"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <!-- actions opening views on models -->
+        <record model="ir.actions.act_window" id="analytical_info_action_window">
+            <field name="name">info.analytical_info window</field>
+            <field name="res_model">info.analytical_info</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <!-- Top menu item -->
+        <menuitem name="Analytical info" id="analytical_info_menu_root"/>
+
+        <!-- menu categories -->
+        <menuitem name="Menu 1" id="analytical_info_menu_1" parent="analytical_info_menu_root" action="analytical_info_action_window"/>
+
+    </data>
+</odoo>
+

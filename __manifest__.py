@@ -1,24 +1,15 @@
 {
-    'name': "Comensation status",
-    'version': '15.0.4.0.0',
-    'sequence': 1,
-
-    'description': """
-        Compensation status module
-    """,
-
-    'author': "My Company",
-    'website': "http://abcd.ad",
-    
-    'category': 'Compensation',
-    'license': 'LGPL-3',
-
-    # any module necessary for this one to work correctly
-    'depends': ['base'],
-
-    # always loaded
+    'name': "Mòdul d'Informació Analítica",
+    'summary': "Mostra les dades d'un compte analític.",
+    'description': "Aquest mòdul permet visualitzar les dades d'un compte analític.",
+    'author': "El teu nom",
+    'category': 'Uncategorized',
+    'version': '0.1',
+    'depends': ['base', 'account'],
     'data': [
-        'security/ir.model.access.csv',
-        'views/sale_order_view.xml',
+        'views/analytical_info.xml',
     ],
+    'installable': True,
+    'auto_install': False,
+    'license': 'LGPL-3',
 }
